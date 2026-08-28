@@ -35,8 +35,8 @@ A separate researcher-in-the-loop workbench built over RKA Core. Writer is desig
 - [Install and run RKA Core](https://github.com/rka-project/rka-core#quick-start)
 - [Read the Core documentation](https://github.com/rka-project/rka-core/tree/main/docs)
 - [Explore RKA Writer](https://github.com/rka-project/rka-writer)
-- [View the ecosystem roadmap](https://github.com/orgs/rka-project/projects)
-- [Visit the project website](https://rka-project.github.io)
+- [View the ecosystem roadmap](https://github.com/orgs/rka-project/projects/1)
+- [Visit the project website](https://rka-project.ceronfu.chatgpt.site)
 
 ## Design principles
 
@@ -52,9 +52,9 @@ A separate researcher-in-the-loop workbench built over RKA Core. Writer is desig
 We welcome researchers, developers, and tool builders interested in durable AI-assisted research workflows.
 
 - [Report a Core issue](https://github.com/rka-project/rka-core/issues)
-- [Contribute to RKA Core](https://github.com/rka-project/rka-core/blob/main/CONTRIBUTING.md)
+- [Read the Core contributor guide](https://github.com/rka-project/rka-core/blob/main/CLAUDE.md)
 - [Discuss Writer requirements](https://github.com/rka-project/rka-writer/issues)
-- [Review the public roadmap](https://github.com/orgs/rka-project/projects)
+- [Review the public roadmap](https://github.com/orgs/rka-project/projects/1)
 
 ---
 
