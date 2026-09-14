@@ -1,61 +1,61 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/rka-project/.github/main/assets/brand/rka-project-plugin-app-icon.svg" width="112" alt="RKA Project logo">
-</p>
+# Research should not lose its memory.
 
-<h1 align="center">RKA Project</h1>
+RKA Project is local-first research memory and evidence infrastructure for
+researchers and AI agents. Keep using Codex or Claude Code; preserve the
+decisions, evidence, and context that should survive your next session.
 
-<p align="center">
-  Local-first research memory and evidence infrastructure for researchers and AI agents.
-</p>
+**Start here:** [Install Core](https://github.com/rka-project/rka-core/blob/main/INSTALL.md)
+· [Backend quick start](https://github.com/rka-project/rka-core#quick-start)
+· [Codex setup](https://github.com/rka-project/rka-core/blob/main/INSTALL.md#85--configure-codex)
+· [Claude Code setup](https://github.com/rka-project/rka-core/blob/main/INSTALL.md#step-2--add-the-local-rka-marketplace-in-claude-code)
 
-Research evolves across conversations, repositories, notebooks, papers, and experiments. RKA helps that work survive across tools, agents, and sessions by preserving not only findings, but also the decisions, evidence, provenance, and reasoning needed to reconstruct a complete research story.
+## Why keep a research record?
 
-## Capture → Crystallize → Reuse
+A fresh AI session suggests an approach you already ruled out. Instead of
+reconstructing the decision from old chats and notebooks, ask the connected
+agent to retrieve the decision, its linked experiment, and its scope from RKA.
+Review the evidence before continuing. Retrieval supports your judgment; it
+does not replace it.
 
-- **Capture** observations, literature, decisions, experiments, failures, and open questions as the work happens.
-- **Crystallize** noisy records into linked claims, evidence, research questions, and traceable conclusions.
-- **Reuse** the resulting knowledge to resume work, recover the complete reasoning behind an idea, and support future research outputs.
+- **Capture:** save observations, literature, experiments, decisions, and questions.
+- **Connect:** keep claims and decisions linked to evidence, including uncertainty and revisions.
+- **Reuse:** resume from relevant records across sessions and tools.
 
-## Products
+## Projects
 
-### [RKA Core](https://github.com/rka-project/rka-core)
+| Project | Role | Current status |
+|---|---|---|
+| [RKA Core](https://github.com/rka-project/rka-core) | Durable records, provenance, retrieval, integrity, backup, and export through local MCP, REST, CLI, and a dashboard. | [3.0.0 released](https://github.com/rka-project/rka-core/releases/tag/v3.0.0). Start here. |
+| [RKA App](https://github.com/rka-project/rka-app) | Installation, lifecycle supervision, and optional deployment adapters around released Core artifacts. | In development. Not required to use Core. |
+| [RKA Writer](https://github.com/rka-project/rka-writer) | A separate researcher-controlled writing workbench built on the research record. | [Design phase](https://github.com/rka-project/rka-writer/blob/main/STATUS.md); no supported authoring release. |
 
-The canonical research knowledge layer. RKA Core provides local-first storage, structured retrieval, provenance, integrity checks, backup and recovery, and project continuity through MCP, REST, CLI, and a local web dashboard.
+Status checked September 14, 2026. Core runs independently of App and Writer.
+Easier local setup is the immediate access priority. Fixed-sample read-only
+demos and user-owned cloud templates are planned, not a shared hosted research
+service. A desktop app is not a prerequisite.
 
-**Status:** Available and under active development. Core reliability and install-friendly distribution are the current priorities.
+## Local-first, with explicit boundaries
 
-### [RKA Writer](https://github.com/rka-project/rka-writer)
+In a local setup, the research database stays in your installation. You manage
+access, backup, and export; no RKA account is required. RKA Project does not host
+a shared database of users' research.
 
-A separate researcher-in-the-loop workbench built over RKA Core. Writer is designed to help researchers shape an insight into a coherent argument, discuss and revise the paper spine, and draft from selected evidence while keeping framing, terminology, emphasis, and final prose under researcher control.
+Your AI client and embedding provider are separate boundaries: retrieved
+context may be sent to your chosen model provider, and a remote embedding
+backend may receive text. Choose settings that match your research's privacy
+requirements. [Read the access boundary](https://github.com/rka-project/rka-core/blob/main/docs/REMOTE_ACCESS.md).
 
-**Status:** In development.
+Keep evidence inspectable, preserve earlier decisions, and review consequential
+changes. Local-first storage does not make AI interpretations automatically correct.
 
-## Get started
+## Documentation and participation
 
-- [Install and run RKA Core](https://github.com/rka-project/rka-core#quick-start)
-- [Read the Core documentation](https://github.com/rka-project/rka-core/tree/main/docs)
-- [Explore RKA Writer](https://github.com/rka-project/rka-writer)
-- [View the ecosystem roadmap](https://github.com/orgs/rka-project/projects/1)
-- [Visit the project website](https://rka-project.ceronfu.chatgpt.site)
-
-## Design principles
-
-- **Local-first:** research records remain under the researcher’s control.
-- **Traceable:** important claims and decisions retain their evidence and provenance.
-- **Researcher-controlled:** AI suggestions do not silently become canonical research knowledge.
-- **Recoverable:** durable state can be inspected, exported, backed up, and restored.
-- **Provider-agnostic:** agents and applications integrate through explicit, model-independent interfaces.
-- **Modular:** knowledge infrastructure and downstream research tools evolve as separate products.
-
-## Participate
-
-We welcome researchers, developers, and tool builders interested in durable AI-assisted research workflows.
-
-- [Report a Core issue](https://github.com/rka-project/rka-core/issues)
-- [Read the Core contributor guide](https://github.com/rka-project/rka-core/blob/main/CLAUDE.md)
+- [Visit the project website](https://rka-project.github.io/)
+- [Read Core documentation](https://github.com/rka-project/rka-core/tree/main/docs)
+- [See Core releases](https://github.com/rka-project/rka-core/releases)
+- [Report an issue or ask a question](https://github.com/rka-project/rka-core/issues)
 - [Discuss Writer requirements](https://github.com/rka-project/rka-writer/issues)
-- [Review the public roadmap](https://github.com/orgs/rka-project/projects/1)
+- [Review Core contribution conventions](https://github.com/rka-project/rka-core/blob/main/CLAUDE.md)
 
----
-
-RKA Project is developed by researchers for research workflows where continuity, provenance, and human judgment matter.
+RKA Project is developed by researchers for workflows where continuity,
+provenance, and human judgment matter.
